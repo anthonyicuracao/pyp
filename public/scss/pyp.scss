@@ -66,7 +66,8 @@
     justify-content: center;
   }
 }
-#pyp-page-2 {
+#pyp-page-2,
+#pyp-page-3 {
   text-align: center;
 }
 .pyp-page {
@@ -84,7 +85,6 @@
     gap: 10px;
   }
   .pyp-code-input {
-    width: 40px;
     height: 50px;
     text-align: center;
     font-size: 20px;
@@ -93,6 +93,12 @@
   }
   .pyp-code-input:focus {
     outline: 2px solid var(--pyp-curacao-1);
+  }
+  .pyp-code-input.pyp-code-phone {
+    width: 40px;
+  }
+  .pyp-code-input.pyp-code-dob {
+    width: 208px;
   }
   .pyp-a {
     color: var(--pyp-blue-1);
@@ -197,7 +203,7 @@
       width: 65%;
     }
     .pyp-h2 {
-      font-size: 1rem;
+      font-size: 16px;
       font-weight: 300;
       margin: 0 auto;
       text-align: center;
@@ -235,7 +241,7 @@
             }
           }
           .pyp-h3 {
-            font-size: 1rem;
+            font-size: 16px;
             line-height: 1;
             margin: 1rem 0 0.5rem 0;
           }
@@ -342,7 +348,7 @@
       width: 35%;
     }
     .pyp-h2 {
-      font-size: 1rem;
+      font-size: 16px;
       font-weight: 300;
       margin: 0;
     }
@@ -379,13 +385,13 @@
     }
   }
   .pyp-h1 {
-    font-size: 1.25rem;
+    font-size: 20px;
     margin-top: 0;
     text-align: center;
   }
   .pyp-phone-num {
     color: var(--pyp-curacao-1);
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 600;
     margin: 0.5rem auto;
   }

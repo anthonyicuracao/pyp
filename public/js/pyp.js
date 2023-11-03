@@ -72,6 +72,25 @@ function pypRadioFunc() {
         pypRadio[k].addEventListener('change', pypRadioStateFunc);
     }
 }
+function pypGoToPageOne(event) {
+    event.preventDefault();
+    document.getElementById("pyp-page-1-form").reset();
+    window.location.href = "pyp-page-1.html";
+}
+function pypGoToPageTwo(event) {
+    event.preventDefault();
+    document.getElementById("pyp-page-2-form").reset();
+    window.location.href = "pyp-page-2.html";
+}
+function pypGoToPageThree(event) {
+    event.preventDefault();
+    document.getElementById("pyp-page-3-form").reset();
+    window.location.href = "pyp-page-3.html";
+}
+function pypGoToPageFour(event) {
+    event.preventDefault();
+    window.location.href = "pyp-page-4.html";
+}
 function pypCodeFunc() {
     for (let i = 0; i < pypCodeInput.length; i++) {
         pypCodeInput[i].addEventListener('input', () => {

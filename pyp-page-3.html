@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/dev/Montserrat.css" />
+    <link rel="stylesheet" href="./public/css/pyp.min.css" />
+</head>
+
+<body>
+    <section id="pyp-page-3" class="pyp-page">
+        <form id="pyp-page-3-form">
+            <h1 class="pyp-h1 pyp-mb-0 pyp-bold">Verify with your personal information</h1>
+            <div>
+                <div class="pyp-mt-3 pyp-mb-2 pyp-bold">Last 4 SSN</div>
+                <div class="pyp-code-inputs">
+                    <input class="pyp-code-input pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 1)">
+                    <input class="pyp-code-input pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 2)">
+                    <input class="pyp-code-input pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 3)">
+                    <input class="pyp-code-input pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 4)">
+                </div>
+            </div>
+            <div>
+                <div class="pyp-mt-3 pyp-mb-2 pyp-bold">Date of birth</div>
+                <input minlength="10" class="pyp-code-input pyp-code-dob" type="text" />
+            </div>
+            <div>
+                <div class="pyp-my-3">
+                    <button type="button" id="pyp-code-verify" disabled="" class="pyp-cta-btn">Verify</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="./public/js/pyp.js"></script>
+</body>
+
+</html>

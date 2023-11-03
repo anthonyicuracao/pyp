@@ -1,0 +1,22 @@
+{
+  "name": "pyp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint:check": "eslint .",
+    "eslint:fix": "eslint --fix .",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonyicuracao/pyp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonyicuracao/pyp/issues"
+  },
+  "homepage": "https://github.com/anthonyicuracao/pyp#readme"
+}

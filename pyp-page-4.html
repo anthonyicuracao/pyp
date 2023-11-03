@@ -1,123 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/dev/Montserrat.css" />
     <link rel="stylesheet" href="./public/css/pyp.min.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="pyp-page-4" class="pyp-page pyp-page-4">
-        <div class="pyp-main">
-            <h1 class="pyp-h1 pyp-mb-2 pyp-bold">Review your order</h1>
-            <form onsubmit="pypGoToPageFive(event)" id="pyp-page-4-form" class="pyp-form pyp-mt-3">
-                <ul class="pyp-products pyp-review">
-                    <!-- Product #1 BEGIN -->
-                    <li class="pyp-product">
-                        <div class="pyp-product-details">
-                            <img class="pyp-product-img" alt="LG TV Bundle"
-                                src="https://icuracao.com/media/catalog/product/cache/ebc7fb90b21f5eb74aecbdd15a6003e6/i/r/irb-irb-dm_dw1023b.jpg" />
-                            <div class="pyp-product-name-sku">
-                                <div class="pyp-product-name-sku-flex">
-                                    <div class="pyp-product-name pyp-bold pyp-grey">
-                                        Samsung Q80T 75" HDR 4K UHD Smart QLED TV
-                                    </div>
-                                    <div class="pyp-product-sku pyp-grey">
-                                        SKU 32Q-863-QN85QN85BAFX
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pyp-product-details">
-                            <img height="5rem" width="5rem" class="pyp-product-img" alt="LG TV Bundle"
-                                src="https://icuracao.com/pub/media/assets/2023/11-NOV/centricity/protection.png" />
-                            <!-- <img height="2.5rem" width="2.5rem" class="pyp-product-img" alt="LG TV Bundle" src="https://icuracao.com/media/catalog/product/cache/ebc7fb90b21f5eb74aecbdd15a6003e6/i/r/irb-irb-dm_dw1023b.jpg" /> -->
-                            <div class="pyp-product-name-sku">
-                                <div>
-                                    <div class="pyp-product-name-sku-flex">
-                                        <div class="pyp-product-name pyp-grey">
-                                            3 - Year Protection for only <span class="pyp-bold">$85.00</span><br />
-                                            <span class="pyp-cut">Reg. $100</span> (<span
-                                                class="pyp-bold">$2.36mo.</span>)
-                                        </div>
-                                       
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- Product #1 END -->
-                    <!-- Product #2 BEGIN -->
-                    <li class="pyp-product">
-                        <div class="pyp-product-details">
-                            <img class="pyp-product-img" alt="LG TV Bundle"
-                                src="https://icuracao.com/media/catalog/product/cache/ebc7fb90b21f5eb74aecbdd15a6003e6/i/r/irb-irb-dm_dw1023b.jpg" />
-                            <div class="pyp-product-name-sku">
-                                <div class="pyp-product-name-sku-flex">
-                                    <div class="pyp-product-name pyp-bold pyp-grey">
-                                        Samsung Q80T 75" HDR 4K UHD Smart QLED TV
-                                    </div>
-                                    <div class="pyp-product-sku pyp-grey">
-                                        SKU 32Q-863-QN85QN85BAFX
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pyp-product-details">
-                            <img height="5rem" width="5rem" class="pyp-product-img" alt="LG TV Bundle"
-                                src="https://icuracao.com/pub/media/assets/2023/11-NOV/centricity/protection.png" />
-                            <!-- <img height="2.5rem" width="2.5rem" class="pyp-product-img" alt="LG TV Bundle" src="https://icuracao.com/media/catalog/product/cache/ebc7fb90b21f5eb74aecbdd15a6003e6/i/r/irb-irb-dm_dw1023b.jpg" /> -->
-                            <div class="pyp-product-name-sku">
-                                <div>
-                                    <div class="pyp-product-name-sku-flex">
-                                        <div class="pyp-product-name pyp-grey">
-                                            3 - Year Protection for only <span class="pyp-bold">$85.00</span><br />
-                                            <span class="pyp-cut">Reg. $100</span> (<span
-                                                class="pyp-bold">$2.36mo.</span>)
-                                        </div>
-                                       
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- Product #2 END -->
-                </ul>
-                <div class="pyp-grey pyp-bold pyp-center pyp-mt-3">
-                    <div>
-                        We will extend your payment terms to ensure that your monthly payments
-                        remain unchanged if you made your purchase on a flex or promo account.
+      <div class="pyp-main">
+        <h1 class="pyp-h1 pyp-mb-2 pyp-bold">Review your order</h1>
+        <form
+          onsubmit="pypGoToPageFive(event)"
+          id="pyp-page-4-form"
+          class="pyp-form pyp-mt-3"
+        >
+          <ul class="pyp-products pyp-review">
+            <!-- Product #1 BEGIN -->
+            <li class="pyp-product">
+              <div class="pyp-product-details">
+                <img
+                  class="pyp-product-img"
+                  alt="LG TV Bundle"
+                  src="https://icuracao.com/media/catalog/product/cache/ebc7fb90b21f5eb74aecbdd15a6003e6/i/r/irb-irb-dm_dw1023b.jpg"
+                />
+                <div class="pyp-product-name-sku">
+                  <div class="pyp-product-name-sku-flex">
+                    <div class="pyp-product-name pyp-bold pyp-grey">
+                      Samsung Q80T 75" HDR 4K UHD Smart QLED TV
                     </div>
+                    <div class="pyp-product-sku pyp-grey">
+                      SKU 32Q-863-QN85QN85BAFX
+                    </div>
+                  </div>
                 </div>
-                <div class="pyp-cta">
-                    <div class="pyp-checkbox pyp-custom-checkbox pyp-mt-4 ">
-                        <input class="pyp-checkbox-input" id="pyp-agree" tabindex="882" type="checkbox" name="pyp-agree"
-                            value="y" style=" margin-left: -1rem; margin-right: 1rem;" />
-                        <label class="pyp-checkbox-label" style="font-size: 12px; cursor: pointer;" for="pyp-agree">
-                            I agree and consent to this payment to my Curacao Credit Account.
-                        </label>
+              </div>
+              <div class="pyp-product-details">
+                <img
+                  height="5rem"
+                  width="5rem"
+                  class="pyp-product-img"
+                  alt="LG TV Bundle"
+                  src="https://icuracao.com/pub/media/assets/2023/11-NOV/centricity/protection.png"
+                />
+                <!-- <img height="2.5rem" width="2.5rem" class="pyp-product-img" alt="LG TV Bundle" src="https://icuracao.com/media/catalog/product/cache/ebc7fb90b21f5eb74aecbdd15a6003e6/i/r/irb-irb-dm_dw1023b.jpg" /> -->
+                <div class="pyp-product-name-sku">
+                  <div>
+                    <div class="pyp-product-name-sku-flex">
+                      <div class="pyp-product-name pyp-grey">
+                        3 - Year Protection for only
+                        <span class="pyp-bold">$85.00</span><br />
+                        <span class="pyp-cut">Reg. $100</span> (<span
+                          class="pyp-bold"
+                          >$2.36mo.</span
+                        >)
+                      </div>
                     </div>
-                    <div class="pyp-my-4">
-                        <button type="submit" disabled="" id="pyp-btn-agree"
-                            class="pyp-btn pyp-mx pyp-mt-3 pyp-mb-3">Continue</button>
-                    </div>
-                    <div class="pyp-disc">
-                        Protection Plans are issued & administered by Bankers Warranty Group, Inc., BWG Protection
-                        Plans, Inc., Bankers Warranty Group of Oklahoma, Inc., and /or Bankers Warranty Group of
-                        Florida, Inc. 11101 Roosevelt Blvd N. St Petersburg, FL 33716. See terms & conditions for
-                        complete coverage limits and exclusions. If you have any questions, please call us at
-                        1-866-777-1922. <a class="pyp-a" href="https://icuracao.com/ew" target="_blank"
-                            rel="noopener noreferrer">Learn more</a><br />Ver. 09/2021
-                    </div>
+                  </div>
                 </div>
-            </form>
-        </div>
+              </div>
+            </li>
+            <!-- Product #1 END -->
+            <!-- Product #2 BEGIN -->
+            <li class="pyp-product">
+              <div class="pyp-product-details">
+                <img
+                  class="pyp-product-img"
+                  alt="LG TV Bundle"
+                  src="https://icuracao.com/media/catalog/product/cache/ebc7fb90b21f5eb74aecbdd15a6003e6/i/r/irb-irb-dm_dw1023b.jpg"
+                />
+                <div class="pyp-product-name-sku">
+                  <div class="pyp-product-name-sku-flex">
+                    <div class="pyp-product-name pyp-bold pyp-grey">
+                      Samsung Q80T 75" HDR 4K UHD Smart QLED TV
+                    </div>
+                    <div class="pyp-product-sku pyp-grey">
+                      SKU 32Q-863-QN85QN85BAFX
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pyp-product-details">
+                <img
+                  height="5rem"
+                  width="5rem"
+                  class="pyp-product-img"
+                  alt="LG TV Bundle"
+                  src="https://icuracao.com/pub/media/assets/2023/11-NOV/centricity/protection.png"
+                />
+                <!-- <img height="2.5rem" width="2.5rem" class="pyp-product-img" alt="LG TV Bundle" src="https://icuracao.com/media/catalog/product/cache/ebc7fb90b21f5eb74aecbdd15a6003e6/i/r/irb-irb-dm_dw1023b.jpg" /> -->
+                <div class="pyp-product-name-sku">
+                  <div>
+                    <div class="pyp-product-name-sku-flex">
+                      <div class="pyp-product-name pyp-grey">
+                        3 - Year Protection for only
+                        <span class="pyp-bold">$85.00</span><br />
+                        <span class="pyp-cut">Reg. $100</span> (<span
+                          class="pyp-bold"
+                          >$2.36mo.</span
+                        >)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Product #2 END -->
+          </ul>
+          <div class="pyp-grey pyp-bold pyp-center pyp-mt-3">
+            <div>
+              We will extend your payment terms to ensure that your monthly
+              payments remain unchanged if you made your purchase on a flex or
+              promo account.
+            </div>
+          </div>
+          <div class="pyp-cta">
+            <div class="pyp-checkbox pyp-custom-checkbox pyp-mt-4 ">
+              <input
+                class="pyp-checkbox-input"
+                id="pyp-agree"
+                tabindex="882"
+                type="checkbox"
+                name="pyp-agree"
+                value="y"
+                style=" margin-left: -1rem; margin-right: 1rem;"
+              />
+              <label
+                class="pyp-checkbox-label"
+                style="font-size: 12px; cursor: pointer;"
+                for="pyp-agree"
+              >
+                I agree and consent to this payment to my Curacao Credit
+                Account.
+              </label>
+            </div>
+            <div class="pyp-my-4">
+              <button
+                type="submit"
+                disabled=""
+                id="pyp-btn-agree"
+                class="pyp-btn pyp-mx pyp-mt-3 pyp-mb-3"
+              >
+                Continue
+              </button>
+            </div>
+            <div class="pyp-disc">
+              Protection Plans are issued & administered by Bankers Warranty
+              Group, Inc., BWG Protection Plans, Inc., Bankers Warranty Group of
+              Oklahoma, Inc., and /or Bankers Warranty Group of Florida, Inc.
+              11101 Roosevelt Blvd N. St Petersburg, FL 33716. See terms &
+              conditions for complete coverage limits and exclusions. If you
+              have any questions, please call us at 1-866-777-1922.
+              <a
+                class="pyp-a"
+                href="https://icuracao.com/ew"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Learn more</a
+              ><br />Ver. 09/2021
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
     <script src="./public/js/pyp.js"></script>
-</body>
-
+  </body>
 </html>

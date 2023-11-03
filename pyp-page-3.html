@@ -10,7 +10,7 @@
 
 <body>
     <section id="pyp-page-3" class="pyp-page">
-        <form id="pyp-page-3-form">
+        <form onsubmit="pypGoToPageFour(event)" id="pyp-page-3-form">
             <h1 class="pyp-h1 pyp-mb-0 pyp-bold">Verify with your personal information</h1>
             <div>
                 <div class="pyp-mt-3 pyp-mb-2 pyp-bold">Last 4 SSN</div>
@@ -23,11 +23,12 @@
             </div>
             <div>
                 <div class="pyp-mt-3 pyp-mb-2 pyp-bold">Date of birth</div>
-                <input minlength="10" class="pyp-code-input pyp-code-dob" type="text" />
+                <input minlength="10" class="pyp-code-input pyp-code-dob" type="date" />
             </div>
             <div>
-                <div class="pyp-my-3">
-                    <button type="button" id="pyp-code-verify" disabled="" class="pyp-cta-btn">Verify</button>
+                <div class="pyp-my-4 pyp-cta-flex">
+                    <button onclick="pypGoToPageTwo(event)" type="button" class="pyp-cta-btn-secondary">Cancel</button>
+                    <button disabled="" type="submit" id="pyp-code-submit" class="pyp-cta-btn">Verify</button>
                 </div>
             </div>
         </form>

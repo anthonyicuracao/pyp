@@ -2,8 +2,8 @@ var pypBody = document.querySelector("html>body");
 var pypModal = document.querySelector("#pyp-modal");
 var pypAccordion = document.querySelectorAll('.pyp-accordion');
 var pypRadio = document.querySelectorAll('input[type="radio"]');
-var pypCodeInput = document.querySelectorAll('.pyp-code-input');
-var pypCodeSubmit = document.getElementById('pyp-code-verify');
+var pypFormInput = document.querySelectorAll('.pyp-code-input');
+var pypFormSubmit = document.getElementById('pyp-code-submit');
 
 function pypShowModalFunc() {
     if (
@@ -88,29 +88,33 @@ function pypGoToPageFour(event) {
     event.preventDefault();
     window.location.href = "pyp-page-4.html";
 }
+function pypGoToPageFive(event) {
+    event.preventDefault();
+    window.location.href = "pyp-page-5.html";
+}
 function pypCodeFunc() {
-    for (let i = 0; i < pypCodeInput.length; i++) {
-        pypCodeInput[i].addEventListener('input', () => {
-            if (i === pypCodeInput.length - 1 && pypCodeInput[i].value !== '') {
-                pypCodeSubmit.removeAttribute('disabled');
+    for (let i = 0; i < pypFormInput.length; i++) {
+        pypFormInput[i].addEventListener('input', () => {
+            if (i === pypFormInput.length - 1 && pypFormInput[i].value !== '') {
+                pypFormSubmit.removeAttribute('disabled');
             }
             else {
-                pypCodeSubmit.setAttribute('disabled', 'true');
+                pypFormSubmit.setAttribute('disabled', 'true');
             }
         });
     }
 }
 function pypFocusNext(currentInput, index) {
     currentInput.value = currentInput.value.replace(/[^0-9]/g, '');
-    if (currentInput.value !== '' && index < pypCodeInput.length) {
-        pypCodeInput[index].focus();
+    if (currentInput.value !== '' && index < pypFormInput.length) {
+        pypFormInput[index].focus();
     } else if (index > 0) {
-        pypCodeInput[index - 1].focus();
+        pypFormInput[index - 1].focus();
     }
 }
 function pypFocusFirst() {
-    if (pypCodeInput && pypCodeInput[0] && typeof pypCodeInput[0] !== "undefined") {
-        pypCodeInput[0].focus();
+    if (pypFormInput && pypFormInput[0] && typeof pypFormInput[0] !== "undefined") {
+        pypFormInput[0].focus();
     }
 }
 pypAccordionFunc();
@@ -126,3 +130,14 @@ window.addEventListener("click", function (event) {
         }
     }
 });
+
+function optinCheckboxFunc() {
+    var optinCheckbox = document.getElementById("optin");
+    if (optinCheckbox && typeof optinCheckbox !== "undefined") {
+        optinCheckbox.addEventListener("change", function () {
+            document.getElementById("submit1").disabled = !this.checked;
+        });
+    }
+}
+
+optinCheckboxFunc();

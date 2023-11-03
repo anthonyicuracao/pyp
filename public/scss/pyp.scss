@@ -60,17 +60,20 @@
 }
 .pyp-page {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   padding: 1rem 0.5rem;
   margin: 0 auto;
   max-width: 1000px;
+  input[type="date"] {
+    background-color: white;
+  }
   * {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
   .pyp-main {
     .pyp-h2 {
       font-size: 16px;
-      font-weight: 300;
+      font-weight: 400;
       margin: 0 auto;
       text-align: center;
       text-transform: uppercase;
@@ -217,7 +220,7 @@
     }
     .pyp-h2 {
       font-size: 16px;
-      font-weight: 300;
+      font-weight: 400;
       margin: 0;
     }
     .pyp-centricity {
@@ -245,7 +248,7 @@
       color: var(--pyp-blue-1);
       cursor: pointer;
       font-size: 15px;
-      font-weight: 300;
+      font-weight: 400;
       outline: none;
       padding: 0;
       padding-left: 1rem;
@@ -337,7 +340,7 @@
         .pyp-modal-desc {
           color: var(--pyp-grey-4);
           font-size: 14px;
-          font-weight: 300;
+          font-weight: 400;
           margin: 0;
         }
         .pyp-modal-green {
@@ -437,10 +440,7 @@
   .pyp-num:focus {
     outline: 2px solid var(--pyp-curacao-1);
   }
-  .pyp-num.pyp-code-phone {
-    width: 30px;
-    // width: 40px;
-  }
+
   .pyp-num.pyp-code-dob {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -449,7 +449,7 @@
   .pyp-a {
     color: var(--pyp-blue-1);
     cursor: pointer;
-    font-weight: 300;
+    font-weight: 400;
     outline: none;
     text-decoration: underline;
   }
@@ -459,7 +459,7 @@
     color: var(--pyp-blue-1);
     cursor: pointer;
     font-size: inherit;
-    font-weight: 300;
+    font-weight: 400;
     outline: none;
     padding: 0;
     text-decoration: underline;
@@ -525,6 +525,7 @@
     cursor: pointer;
     display: block;
     font-weight: 600;
+    font-size: 16px;
     margin: 0 auto;
     padding: 12px 1rem;
     @media screen and (max-width: 400px) {
@@ -552,7 +553,7 @@
     color: var(--pyp-grey-4);
     font-size: small;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     text-align: left;
   }
@@ -575,8 +576,14 @@
   }
   &.pyp-page-2 {
     text-align: center;
+    .pyp-num.pyp-code-phone {
+      width: 30px !important;
+    }
   }
   &.pyp-page-3 {
+    .pyp-num.pyp-code-phone {
+      width: 40px !important;
+    }
     text-align: center;
     .pyp-cta-flex {
       display: flex;
@@ -592,6 +599,7 @@
           cursor: pointer;
           display: block;
           font-weight: 600;
+          font-size: 16px;
           margin: 0 auto;
           outline: none;
           padding: 12px 1rem;

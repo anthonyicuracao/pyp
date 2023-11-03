@@ -2,9 +2,26 @@ var pypBody = document.querySelector("html>body");
 var pypModal = document.querySelector("#pyp-modal");
 var pypAccordion = document.querySelectorAll('.pyp-accordion');
 var pypRadio = document.querySelectorAll('input[type="radio"]');
-var pypFormInput = document.querySelectorAll('.pyp-code-input');
+var pypFormInput = document.querySelectorAll('.pyp-num');
 var pypFormSubmit = document.getElementById('pyp-code-submit');
+function pypReset() {
+    var inputElements = document.querySelectorAll('input');
+    for (var i = 0; i < inputElements.length; i++) {
+        var element = inputElements[i];
+        if (element.type !== 'hidden') {
+            element.value = '';
+            if (element.type === 'checkbox' || element.type === 'radio') {
+                element.checked = false;
+            }
+        }
+    }
 
+    var formElements = document.querySelectorAll('form');
+    for (var j = 0; j < formElements.length; j++) {
+        var form = formElements[j];
+        form.reset();
+    }
+}
 function pypShowModalFunc() {
     if (
         pypModal !== null &&
@@ -117,10 +134,20 @@ function pypFocusFirst() {
         pypFormInput[0].focus();
     }
 }
+function pypCheckboxFunc() {
+    var pypAgree = document.getElementById("pyp-agree");
+    if (pypAgree && typeof pypAgree !== "undefined") {
+        pypAgree.addEventListener("change", function () {
+            document.getElementById("pyp-btn-agree").disabled = !this.checked;
+        });
+    }
+}
+window.addEventListener('load', pypReset);
 pypAccordionFunc();
 pypRadioFunc();
 pypCodeFunc();
 pypFocusFirst();
+pypCheckboxFunc();
 window.addEventListener("click", function (event) {
     if (
         pypModal !== null && typeof pypModal !== "undefined"
@@ -131,13 +158,7 @@ window.addEventListener("click", function (event) {
     }
 });
 
-function optinCheckboxFunc() {
-    var optinCheckbox = document.getElementById("optin");
-    if (optinCheckbox && typeof optinCheckbox !== "undefined") {
-        optinCheckbox.addEventListener("change", function () {
-            document.getElementById("submit1").disabled = !this.checked;
-        });
-    }
-}
 
-optinCheckboxFunc();
+
+
+

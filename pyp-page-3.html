@@ -9,26 +9,26 @@
 </head>
 
 <body>
-    <section id="pyp-page-3" class="pyp-page">
+    <section id="pyp-page-3" class="pyp-page pyp-page-3">
         <form onsubmit="pypGoToPageFour(event)" id="pyp-page-3-form">
             <h1 class="pyp-h1 pyp-mb-0 pyp-bold">Verify with your personal information</h1>
             <div>
                 <div class="pyp-mt-3 pyp-mb-2 pyp-bold">Last 4 SSN</div>
-                <div class="pyp-code-inputs">
-                    <input class="pyp-code-input pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 1)">
-                    <input class="pyp-code-input pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 2)">
-                    <input class="pyp-code-input pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 3)">
-                    <input class="pyp-code-input pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 4)">
+                <div class="pyp-nums">
+                    <input class="pyp-num pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 1)">
+                    <input class="pyp-num pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 2)">
+                    <input class="pyp-num pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 3)">
+                    <input class="pyp-num pyp-code-phone" type="text" maxlength="1" oninput="pypFocusNext(this, 4)">
                 </div>
             </div>
             <div>
                 <div class="pyp-mt-3 pyp-mb-2 pyp-bold">Date of birth</div>
-                <input minlength="10" class="pyp-code-input pyp-code-dob" type="date" />
+                <input minlength="10" class="pyp-num pyp-code-dob" type="date" />
             </div>
             <div>
                 <div class="pyp-my-4 pyp-cta-flex">
-                    <button onclick="pypGoToPageTwo(event)" type="button" class="pyp-cta-btn-secondary">Cancel</button>
-                    <button disabled="" type="submit" id="pyp-code-submit" class="pyp-cta-btn">Verify</button>
+                    <button onclick="pypGoToPageTwo(event)" type="button" class="pyp-btn-white">Cancel</button>
+                    <button disabled="" type="submit" id="pyp-code-submit" class="pyp-btn">Verify</button>
                 </div>
             </div>
         </form>

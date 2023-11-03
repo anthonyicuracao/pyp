@@ -59,6 +59,33 @@
     box-shadow: none !important;
   }
 }
+/* Hide arrows and spinners in input[type="number"] */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-clear-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+/* Hide arrows and spinners in input[type="range"] */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Hide arrows and spinners in input[type="range"] for Firefox */
+input[type=range] {
+  -moz-appearance: none;
+}
+
+/* Hide arrows in input[type="number"] */
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
 .pyp-page {
   font-size: 15px;
   font-weight: 400;
@@ -605,6 +632,7 @@
 }
 .pyp-page.pyp-page-3 .pyp-cta-flex button.pyp-btn-white {
   background-color: transparent;
+  color: black;
   border: none;
   border-radius: 5rem;
   cursor: pointer;
@@ -815,4 +843,4 @@
   width: 100%;
   bottom: 0;
   left: 0;
-}/*# sourceMappingURL=pyp.css.map */
+}/*# sourceMappingURL=pyp-style.css.map */

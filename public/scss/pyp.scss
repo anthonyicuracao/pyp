@@ -1,0 +1,503 @@
+:root {
+  --pyp-grey: grey;
+  --pyp-grey-border: rgb(192, 192, 192);
+  --pyp-grey-dark: rgb(112, 112, 112);
+  --pyp-grey-light: rgb(242, 239, 239);
+  --pyp-orange: #ff671f;
+  --pyp-orange-light: #e85b1a;
+  --pyp-primary-dark: #8db429;
+}
+@-webkit-keyframes pypUpDown {
+  from {
+    opacity: 0;
+    top: -300px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes pypUpDown {
+  from {
+    opacity: 0;
+    top: -300px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@-webkit-keyframes pypDownUp {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes pypDownUp {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@media print {
+  *,
+  ::after,
+  ::before {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+}
+.pyp-page {
+  display: block;
+  font-weight: 300;
+  padding: 1rem 0.5rem;
+  margin: 0 auto;
+  max-width: 1000px;
+  * {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: start;
+    display: flex;
+    justify-content: center;
+  }
+  .pyp-a {
+    color: rgb(20, 146, 230);
+    cursor: pointer;
+    font-weight: 300;
+    outline: none;
+    text-decoration: underline;
+  }
+  .pyp-bg-light {
+    background-color: var(--pyp-grey-light);
+    border-radius: 0.5rem;
+  }
+  .pyp-bold {
+    font-weight: 600;
+  }
+  .pyp-grey {
+    color: var(--pyp-grey);
+  }
+  .pyp-grey-dark {
+    color: var(--pyp-grey-dark);
+  }
+  .pyp-mb-3 {
+    margin-bottom: 1rem;
+  }
+  .pyp-mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  .pyp-mb-0 {
+    margin-bottom: 0rem;
+  }
+  .pyp-mt-3 {
+    margin-top: 1rem;
+  }
+  .pyp-mt-2 {
+    margin-top: 0.5rem;
+  }
+  .pyp-mt-0 {
+    margin-top: 0rem;
+  }
+  button.pyp-cta-btn {
+    background-color: var(--pyp-orange);
+    border-radius: 5rem;
+    cursor: pointer;
+    display: block;
+    font-weight: 500;
+    margin: 0 auto;
+    min-width: 180px;
+    padding: 10px 12px;
+    @media screen and (max-width: 400px) {
+      width: 100%;
+    }
+  }
+  button.pyp-cta-btn,
+  button.pyp-cta-btn:active,
+  button.pyp-cta-btn:focus,
+  button.pyp-cta-btn:hover {
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  button.pyp-cta-btn:active,
+  button.pyp-cta-btn:focus,
+  button.pyp-cta-btn:hover {
+    background-color: var(--pyp-orange-light);
+  }
+  button.pyp-cta-btn:disabled {
+    // color: darkgray;
+    // background-color: lightgray;
+    opacity: 0.5;
+    // transition: background-color 0.3s ease-in-out;
+  }
+  .pyp-disc {
+    color: var(--pyp-grey);
+    font-size: small;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+  }
+  .pyp-main {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0.5rem;
+    }
+    @media screen and (min-width: 768px) {
+      padding-right: 0.5rem;
+      width: 65%;
+    }
+    .pyp-h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 0 auto;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .pyp-hr {
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid var(--pyp-grey-border);
+      margin: 0.5rem 0 0;
+    }
+    .pyp-form {
+      .pyp-products {
+        list-style: none;
+        margin: 0;
+        padding-inline-start: 0;
+        .pyp-product {
+          list-style: none;
+          margin: 1rem 0;
+          padding-inline-start: 0;
+          .pyp-product-details {
+            display: flex;
+            .pyp-product-img {
+              height: 4rem;
+              width: 4rem;
+            }
+            .pyp-product-name-sku {
+              align-items: center;
+              display: flex;
+              font-size: 14px;
+              justify-content: start;
+              padding-left: 1rem;
+              width: 100%;
+            }
+          }
+          .pyp-h3 {
+            font-size: 1rem;
+            line-height: 1;
+            margin: 1rem 0 0.5rem 0;
+          }
+          .pyp-card {
+            .pyp-h4 {
+              display: flex;
+              align-items: center;
+              justify-content: start;
+              font-size: 14px;
+              margin: 0 0 0.5rem 0;
+              img {
+                height: 24px;
+                margin-left: 0.25rem;
+                width: auto;
+              }
+            }
+            .pyp-custom-radio {
+              align-items: center;
+              display: flex;
+              * {
+                cursor: pointer;
+              }
+            }
+            .pyp-custom-radio input {
+              display: none;
+            }
+            .pyp-radio-label {
+              font-size: small;
+              margin-right: 16px;
+              min-width: calc(100% - 32px);
+              padding-left: 32px;
+              position: relative;
+              .pyp-reg {
+                text-decoration: line-through;
+                &::before {
+                  content: "\0028";
+                }
+                &::after {
+                  content: "\0029";
+                }
+              }
+            }
+            .pyp-radio-checkmark {
+              background-color: white;
+              border: 1px solid var(--pyp-grey-border);
+              border-radius: 50%;
+              height: 16px;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: 16px;
+            }
+            .pyp-radio-label input:checked + .pyp-radio-checkmark:after {
+              background-color: rgb(242, 103, 34);
+              border-radius: 50%;
+              content: "";
+              height: 10px;
+              left: 3px;
+              position: absolute;
+              top: 3px;
+              width: 10px;
+            }
+            .pyp-bar {
+              background-color: rgb(222, 222, 222);
+              border-radius: 0.5rem;
+              height: 0.5rem;
+              margin-top: 0.25rem;
+              position: relative;
+              width: 100%;
+              span {
+                background-color: rgb(20, 146, 230);
+                border-radius: 0.5rem;
+                height: 0.5rem;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 0%;
+                &.pyp-5 {
+                  width: 100%;
+                }
+                &.pyp-3 {
+                  width: 60%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .pyp-cta {
+      margin-bottom: 2rem;
+      text-align: center;
+      p {
+        color: var(--pyp-grey);
+        display: block;
+        font-size: 12px;
+        margin: 0 0 0.5rem;
+      }
+    }
+  }
+  .pyp-aside {
+    @media screen and (min-width: 768px) {
+      padding-left: 0.5rem;
+      width: 35%;
+    }
+    .pyp-h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 0;
+    }
+    .pyp-centricity {
+      background-color: var(--pyp-grey-light);
+      border: none;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      img {
+        border-radius: 1rem;
+        display: block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 350px;
+        width: 100%;
+      }
+    }
+    .pyp-how {
+      padding-inline-start: 2rem;
+      margin: 0.5rem 0 0;
+    }
+    .pyp-learn-more {
+      background-color: white;
+      border: none;
+      color: rgb(20, 146, 230);
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 300;
+      outline: none;
+      padding: 0;
+      padding-left: 1rem;
+      text-decoration: underline;
+    }
+  }
+  .pyp-h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    text-align: center;
+  }
+  .pyp-card {
+    background-color: var(--pyp-grey-light);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.25rem 1rem;
+  }
+  .pyp-modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    height: 100%;
+    left: 0;
+    line-height: 1.2;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999999;
+    .pyp-modal-main,
+    .pyp-modal-now:active,
+    .pyp-modal-now:focus,
+    .pyp-modal-now:hover {
+      box-shadow: rgba(0, 0, 0, 0.05) 0 5px 16px;
+      * {
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      }
+    }
+    .pyp-modal-main {
+      background-color: #fff;
+      bottom: 0;
+      color: var(--pyp-grey-dark);
+      display: block;
+      height: 100%;
+      max-height: 100% !important;
+      overflow: auto;
+      position: relative;
+      width: 100%;
+      @media screen and (max-width: 767px) {
+        -webkit-animation-duration: 0.4s;
+        -webkit-animation-name: pypDownUp;
+        animation-duration: 0.4s;
+        animation-name: pypDownUp;
+        position: fixed;
+      }
+      @media screen and (min-width: 768px) {
+        -webkit-animation-duration: 0.4s;
+        -webkit-animation-name: pypUpDown;
+        animation-duration: 0.4s;
+        animation-name: pypUpDown;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+        position: relative;
+      }
+      .pyp-modal-header {
+        line-height: 1;
+        padding-right: 1rem;
+        text-align: right;
+        .pyp-modal-close {
+          color: var(--pyp-grey-dark);
+          cursor: pointer;
+          font-size: 3rem;
+          font-weight: 200;
+        }
+        &:hover .pyp-modal-close {
+          color: var(--pyp-primary-dark);
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+      .pyp-modal-body {
+        padding: 0 1rem 1rem;
+        img {
+          display: block;
+          height: auto;
+          margin: 0 auto;
+          max-width: 250px;
+          width: 100%;
+        }
+        .pyp-modal-headline,
+        .pyp-modal-desc {
+          margin: 0;
+        }
+        .pyp-modal-headline {
+          color: var(--pyp-grey-dark);
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .pyp-modal-desc {
+          color: var(--pyp-grey);
+          font-size: 14px;
+          font-weight: 300;
+          margin: 0;
+        }
+
+        .pyp-modal-green {
+          background-color: var(--pyp-primary-dark);
+          border-radius: 0.5rem;
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          margin: 1rem 0;
+          padding: 1rem 2rem;
+          text-align: center;
+        }
+        .pyp-accordion-group {
+          border-top: 1px solid var(--pyp-grey-border);
+          list-style: none;
+          padding-inline-start: 0;
+          .pyp-accordion {
+            border-bottom: 1px solid var(--pyp-grey-border);
+            cursor: pointer;
+            list-style: none;
+            padding-inline-start: 0;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+            .pyp-accordion-head {
+              align-items: center;
+              color: var(--pyp-grey-dark);
+              cursor: pointer;
+              display: flex;
+              font-size: 16px;
+              font-weight: 600;
+              justify-content: space-between;
+            }
+            .pyp-accordion-body {
+              color: var(--pyp-grey);
+              display: none;
+              font-size: 14px;
+              padding-top: 0.5rem;
+              ul {
+                list-style: disc;
+                padding-inline-start: 1rem;
+              }
+            }
+            .pyp-accordion-arrow {
+              flex-shrink: 0;
+              width: 1.25rem;
+              height: 1.25rem;
+              margin-left: auto;
+              content: "";
+              background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238db429'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+              background-repeat: no-repeat;
+              background-size: 1.25rem;
+              transition: transform 0.2s ease-in-out;
+              rotate: -90deg;
+
+              *,
+              ::after,
+              ::before {
+                box-sizing: border-box;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

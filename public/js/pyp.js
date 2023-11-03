@@ -2,6 +2,9 @@ var pypBody = document.querySelector("html>body");
 var pypModal = document.querySelector("#pyp-modal");
 var pypAccordion = document.querySelectorAll('.pyp-accordion');
 var pypRadio = document.querySelectorAll('input[type="radio"]');
+var pypCodeInput = document.querySelectorAll('.pyp-code-input');
+var pypCodeSubmit = document.getElementById('pyp-code-verify');
+
 function pypShowModalFunc() {
     if (
         pypModal !== null &&
@@ -69,6 +72,35 @@ function pypRadioFunc() {
         pypRadio[k].addEventListener('change', pypRadioStateFunc);
     }
 }
+function pypCodeFunc() {
+    for (let i = 0; i < pypCodeInput.length; i++) {
+        pypCodeInput[i].addEventListener('input', () => {
+            if (i === pypCodeInput.length - 1 && pypCodeInput[i].value !== '') {
+                pypCodeSubmit.removeAttribute('disabled');
+            }
+            else {
+                pypCodeSubmit.setAttribute('disabled', 'true');
+            }
+        });
+    }
+}
+function pypFocusNext(currentInput, index) {
+    currentInput.value = currentInput.value.replace(/[^0-9]/g, '');
+    if (currentInput.value !== '' && index < pypCodeInput.length) {
+        pypCodeInput[index].focus();
+    } else if (index > 0) {
+        pypCodeInput[index - 1].focus();
+    }
+}
+function pypFocusFirst() {
+    if (pypCodeInput && pypCodeInput[0] && typeof pypCodeInput[0] !== "undefined") {
+        pypCodeInput[0].focus();
+    }
+}
+pypAccordionFunc();
+pypRadioFunc();
+pypCodeFunc();
+pypFocusFirst();
 window.addEventListener("click", function (event) {
     if (
         pypModal !== null && typeof pypModal !== "undefined"
@@ -78,5 +110,3 @@ window.addEventListener("click", function (event) {
         }
     }
 });
-pypAccordionFunc();
-pypRadioFunc();

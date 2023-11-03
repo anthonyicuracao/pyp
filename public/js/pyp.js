@@ -91,23 +91,23 @@ function pypRadioFunc() {
 }
 function pypGoToPageOne(event) {
     event.preventDefault();
-    window.location.href = "pyp-page-1.html";
+    window.location.href = "pyp-page-1.html?";
 }
 function pypGoToPageTwo(event) {
     event.preventDefault();
-    window.location.href = "pyp-page-2.html";
+    window.location.href = "pyp-page-2.html?";
 }
 function pypGoToPageThree(event) {
     event.preventDefault();
-    window.location.href = "pyp-page-3.html";
+    window.location.href = "pyp-page-3.html?";
 }
 function pypGoToPageFour(event) {
     event.preventDefault();
-    window.location.href = "pyp-page-4.html";
+    window.location.href = "pyp-page-4.html?";
 }
 function pypGoToPageFive(event) {
     event.preventDefault();
-    window.location.href = "pyp-page-5.html";
+    window.location.href = "pyp-page-5.html?";
 }
 function pypCodeFunc() {
     for (let i = 0; i < pypFormInput.length; i++) {

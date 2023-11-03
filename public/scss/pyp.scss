@@ -77,12 +77,21 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"] {
   -moz-appearance: none;
 }
-/* Hide arrows in input[type="number"] */
+
+/* Hide arrows in input[type="number"], but not in input[type="date"] */
 input[type="number"] {
   appearance: textfield;
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
 }
+
+/* Restore default styles for input[type="date"] */
+input[type="date"] {
+  appearance: auto;
+  -moz-appearance: auto;
+  -webkit-appearance: auto;
+}
+
 .pyp-page {
   font-size: 15px;
   font-weight: 400;

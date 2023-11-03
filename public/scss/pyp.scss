@@ -479,6 +479,9 @@
   .pyp-grey-5 {
     color: var(--pyp-grey-5);
   }
+  .pyp-nm {
+    margin: 0;
+  }
   .pyp-my-3 {
     margin: 1rem auto;
   }
@@ -715,6 +718,91 @@
       .pyp-checkbox-label::before {
         transition: none;
       }
+    }
+  }
+  &.pyp-page-5 {
+    text-align: center;
+    .pyp-top {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pyp-page-5-img-1 {
+      height: auto;
+      width: 100px;
+    }
+    .pyp-page-5-img-2 {
+      height: auto;
+      width: 180px;
+    }
+    .pyp-products {
+      list-style: none;
+      margin: 0 0 1rem;
+      padding-inline-start: 0;
+      text-align: left;
+      li {
+        margin-bottom: 1rem;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      .pyp-product {
+        border: 4px solid var(--pyp-blue-1);
+        border-radius: 0.25rem;
+        list-style: none;
+        padding-inline-start: 0;
+        padding: 1rem;
+        .pyp-product-details {
+          display: flex;
+          .pyp-product-img {
+            border-radius: 0.25rem;
+            height: 4rem;
+            width: 4rem;
+          }
+          .pyp-product-name-sku {
+            align-items: center;
+            display: flex;
+            font-size: 14px;
+            justify-content: start;
+            padding-left: 1rem;
+            width: 100%;
+          }
+        }
+        .pyp-h3 {
+          font-size: 16px;
+          line-height: 1;
+          margin: 1rem 0 0.5rem 0;
+        }
+        .pyp-card {
+          .pyp-h4 {
+            align-items: center;
+            display: flex;
+            font-size: 14px;
+            justify-content: start;
+            margin: 0 0 0.5rem 0;
+            img {
+              height: 24px;
+              margin-left: 0.25rem;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+    .pyp-page-5-img-3-wrap {
+      position: relative;
+      padding-bottom: 75px;
+    }
+    .pyp-page-5-img-3 {
+      height: auto;
+      width: 100px;
+    }
+    .pyp-badge-img {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
     }
   }
 }

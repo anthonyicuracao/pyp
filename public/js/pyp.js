@@ -74,17 +74,14 @@ function pypRadioFunc() {
 }
 function pypGoToPageOne(event) {
     event.preventDefault();
-    document.getElementById("pyp-page-1-form").reset();
     window.location.href = "pyp-page-1.html";
 }
 function pypGoToPageTwo(event) {
     event.preventDefault();
-    document.getElementById("pyp-page-2-form").reset();
     window.location.href = "pyp-page-2.html";
 }
 function pypGoToPageThree(event) {
     event.preventDefault();
-    document.getElementById("pyp-page-3-form").reset();
     window.location.href = "pyp-page-3.html";
 }
 function pypGoToPageFour(event) {

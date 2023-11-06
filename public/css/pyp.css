@@ -59,35 +59,34 @@
     box-shadow: none !important;
   }
 }
-/* Hide arrows and spinners in input[type="number"] */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-clear-button {
+.pyp-page {
+  /* Hide arrows and spinners in input[type="number"] */
+  /* Hide arrows and spinners in input[type="range"] */
+  /* Hide arrows and spinners in input[type="range"] for Firefox */
+  /* Hide arrows in input[type="number"], but not in input[type="date"] */
+  /* Restore default styles for input[type="date"] */
+}
+.pyp-page input[type=number]::-webkit-inner-spin-button,
+.pyp-page input[type=number]::-webkit-outer-spin-button,
+.pyp-page input[type=number]::-webkit-clear-button {
   -webkit-appearance: none;
   appearance: none;
   display: none;
 }
-
-/* Hide arrows and spinners in input[type="range"] */
-input[type=range]::-webkit-slider-thumb {
+.pyp-page input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
 }
-
-/* Hide arrows and spinners in input[type="range"] for Firefox */
-input[type=range] {
+.pyp-page input[type=range] {
   -moz-appearance: none;
+  appearance: none;
 }
-
-/* Hide arrows in input[type="number"], but not in input[type="date"] */
-input[type=number] {
+.pyp-page input[type=number] {
   appearance: textfield;
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
 }
-
-/* Restore default styles for input[type="date"] */
-input[type=date] {
+.pyp-page input[type=date] {
   appearance: auto;
   -moz-appearance: auto;
   -webkit-appearance: auto;
@@ -510,47 +509,47 @@ input[type=date] {
 .pyp-page .pyp-bold {
   font-weight: 600;
 }
-.pyp-page .pyp-grey-4 {
+.pyp-page .pyp-grey {
   color: var(--pyp-grey-4);
 }
 .pyp-page .pyp-grey-5 {
   color: var(--pyp-grey-5);
 }
 .pyp-page .pyp-nm {
-  margin: 0;
+  margin: 0 !important;
 }
 .pyp-page .pyp-my-3 {
-  margin: 1rem auto;
+  margin: 1rem auto !important;
 }
 .pyp-page .pyp-my-4 {
-  margin: 1.5rem auto;
+  margin: 1.5rem auto !important;
 }
 .pyp-page .pyp-mb-4 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
 }
 .pyp-page .pyp-mb-3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 .pyp-page .pyp-mb-2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem !important;
 }
 .pyp-page .pyp-mb-0 {
-  margin-bottom: 0rem;
+  margin-bottom: 0 !important;
 }
 .pyp-page .pyp-mt-4 {
-  margin-top: 1.5rem;
+  margin-top: 1.5rem !important;
 }
 .pyp-page .pyp-mt-3 {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
 }
 .pyp-page .pyp-mt-2 {
-  margin-top: 0.5rem;
+  margin-top: 0.5rem !important;
 }
 .pyp-page .pyp-mt-1 {
-  margin-top: 0.25rem;
+  margin-top: 0.25rem !important;
 }
 .pyp-page .pyp-mt-0 {
-  margin-top: 0rem;
+  margin-top: 0 !important;
 }
 .pyp-page button.pyp-mx {
   min-width: 180px;

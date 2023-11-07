@@ -10,6 +10,7 @@
   --pyp-curacao-1: rgb(147, 192, 57);
   --pyp-curacao-2: rgb(140, 179, 41);
   --pyp-blue-1: rgb(20, 146, 230);
+  --pyp-curacao-3: rgba(147, 192, 57, 0.5);
 }
 
 @-webkit-keyframes pypUpDown {
@@ -90,7 +91,7 @@
   /* Revert Modal native behavior */
   font-size: 15px;
   font-weight: 400;
-  padding: 1rem 0.5rem;
+  padding: 16px 8px;
   margin: 0 auto;
   max-width: 1000px;
   /* Hide arrows and spinners in input[type="number"] */
@@ -165,6 +166,9 @@
 .pyp-page * {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
+.pyp-page .pyp-main .pyp-lh {
+  line-height: 1.2;
+}
 .pyp-page .pyp-main .pyp-h2 {
   font-size: 16px;
   font-weight: 400;
@@ -177,7 +181,7 @@
   border-left: none;
   border-right: none;
   border-top: 1px solid var(--pyp-grey-3);
-  margin: 0.5rem 0 0;
+  margin: 8px 0 0;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products {
   list-style: none;
@@ -189,38 +193,38 @@
   padding-inline-start: 0;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product.pyp-product-m {
-  margin: 1rem 0;
+  margin: 16px 0;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product .pyp-product-details {
   display: flex;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product .pyp-product-details .pyp-product-img {
-  height: 4rem;
-  width: 4rem;
+  height: 64px;
+  width: 64px;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product .pyp-product-details .pyp-product-name-sku {
   align-items: center;
   display: flex;
   font-size: 14px;
   justify-content: start;
-  padding-left: 1rem;
+  padding-left: 16px;
   width: 100%;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product .pyp-h3 {
   font-size: 16px;
   line-height: 1;
-  margin: 1rem 0 0.5rem 0;
+  margin: 16px 0 8px 0;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product .pyp-card .pyp-h4 {
   align-items: center;
   display: flex;
   font-size: 14px;
   justify-content: start;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 8px 0;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product .pyp-card .pyp-h4 img {
   height: 24px;
-  margin-left: 0.25rem;
+  margin-left: 4px;
   width: auto;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product .pyp-card .pyp-custom-radio {
@@ -253,34 +257,34 @@
   background-color: white;
   border: 1px solid var(--pyp-grey-3);
   border-radius: 50%;
-  height: 16px;
+  height: 18px;
   left: 0;
   position: absolute;
-  top: 0;
-  width: 16px;
+  top: 3px;
+  width: 18px;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product .pyp-card .pyp-radio-label input:checked + .pyp-radio-checkmark:after {
   background-color: var(--pyp-orange-1);
   border-radius: 50%;
   content: "";
   height: 10px;
-  left: 2px;
+  left: 3px;
   position: absolute;
-  top: 2px;
+  top: 3px;
   width: 10px;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product .pyp-card .pyp-bar {
   background-color: var(--pyp-grey-2);
-  border-radius: 0.5rem;
-  height: 0.5rem;
-  margin-top: 0.25rem;
+  border-radius: 8px;
+  height: 8px;
+  margin-top: 4px;
   position: relative;
   width: 100%;
 }
 .pyp-page .pyp-main .pyp-form .pyp-products .pyp-product .pyp-card .pyp-bar span {
   background-color: var(--pyp-blue-1);
-  border-radius: 0.5rem;
-  height: 0.5rem;
+  border-radius: 8px;
+  height: 8px;
   left: 0;
   position: absolute;
   top: 0;
@@ -293,18 +297,18 @@
   width: 60%;
 }
 .pyp-page .pyp-main .pyp-cta {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
   text-align: center;
 }
 .pyp-page .pyp-main .pyp-cta p {
   color: var(--pyp-grey-4);
   display: block;
   font-size: 12px;
-  margin: 0.5rem 0;
+  margin: 8px 0;
 }
 @media screen and (min-width: 768px) {
   .pyp-page .pyp-aside {
-    padding-left: 0.5rem;
+    padding-left: 8px;
     width: 35%;
   }
 }
@@ -316,11 +320,11 @@
 .pyp-page .pyp-aside .pyp-centricity {
   background-color: var(--pyp-grey-1);
   border: none;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  border-radius: 8px;
+  margin-bottom: 16px;
 }
 .pyp-page .pyp-aside .pyp-centricity img {
-  border-radius: 1rem;
+  border-radius: 16px;
   display: block;
   height: auto;
   margin-left: auto;
@@ -329,8 +333,8 @@
   width: 100%;
 }
 .pyp-page .pyp-aside .pyp-how {
-  padding-inline-start: 2rem;
-  margin: 0.5rem 0 0;
+  padding-inline-start: 32px;
+  margin: 8px 0 0;
 }
 .pyp-page .pyp-aside .pyp-learn-more {
   background-color: white;
@@ -341,7 +345,7 @@
   font-weight: 400;
   outline: none;
   padding: 0;
-  padding-left: 1rem;
+  padding-left: 16px;
   text-decoration: underline;
 }
 .pyp-page .pyp-modal {
@@ -403,13 +407,13 @@
 }
 .pyp-page .pyp-modal .pyp-modal-main .pyp-modal-header {
   line-height: 1;
-  padding-right: 1rem;
+  padding-right: 16px;
   text-align: right;
 }
 .pyp-page .pyp-modal .pyp-modal-main .pyp-modal-header .pyp-modal-close {
   color: var(--pyp-grey-5);
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 200;
 }
 .pyp-page .pyp-modal .pyp-modal-main .pyp-modal-header:hover .pyp-modal-close {
@@ -418,7 +422,7 @@
   text-decoration: none;
 }
 .pyp-page .pyp-modal .pyp-modal-main .pyp-modal-body {
-  padding: 0 1rem 1rem;
+  padding: 0 16px 16px;
 }
 .pyp-page .pyp-modal .pyp-modal-main .pyp-modal-body img {
   display: block;
@@ -444,12 +448,12 @@
 }
 .pyp-page .pyp-modal .pyp-modal-main .pyp-modal-body .pyp-modal-green {
   background-color: var(--pyp-curacao-2);
-  border-radius: 0.5rem;
+  border-radius: 8px;
   color: white;
   font-size: 15px;
   font-weight: 600;
-  margin: 1rem 0;
-  padding: 1rem 2rem;
+  margin: 16px 0;
+  padding: 16px 32px;
   text-align: center;
 }
 .pyp-page .pyp-modal .pyp-modal-main .pyp-modal-body .pyp-accordion-group {
@@ -462,8 +466,8 @@
   cursor: pointer;
   list-style: none;
   padding-inline-start: 0;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 .pyp-page .pyp-modal .pyp-modal-main .pyp-modal-body .pyp-accordion-group .pyp-accordion .pyp-accordion-head {
   align-items: center;
@@ -478,21 +482,21 @@
   color: var(--pyp-grey-4);
   display: none;
   font-size: 14px;
-  padding-top: 0.25rem;
+  padding-top: 4px;
 }
 .pyp-page .pyp-modal .pyp-modal-main .pyp-modal-body .pyp-accordion-group .pyp-accordion .pyp-accordion-body ul {
   list-style: disc;
-  padding-inline-start: 1rem;
+  padding-inline-start: 16px;
 }
 .pyp-page .pyp-modal .pyp-modal-main .pyp-modal-body .pyp-accordion-group .pyp-accordion .pyp-accordion-arrow {
   flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   margin-left: auto;
   content: "";
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238db429'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-size: 1.25rem;
+  background-size: 20px;
   transition: transform 0.2s ease-in-out;
   rotate: -90deg;
 }
@@ -510,13 +514,13 @@
   color: var(--pyp-curacao-1);
   font-size: 24px;
   font-weight: 600;
-  margin: 0.5rem auto;
+  margin: 8px auto;
 }
 .pyp-page .pyp-card {
   background-color: var(--pyp-grey-1);
   border: none;
-  border-radius: 0.5rem;
-  padding: 1.25rem 1rem;
+  border-radius: 8px;
+  padding: 20px 16px;
 }
 .pyp-page .pyp-center {
   text-align: center;
@@ -530,7 +534,7 @@
   text-align: center;
   font-size: 20px;
   border: 1px solid var(--pyp-grey-3);
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 .pyp-page .pyp-num[type=number] {
   height: 50px;
@@ -539,8 +543,8 @@
   outline: 2px solid var(--pyp-curacao-1);
 }
 .pyp-page .pyp-num.pyp-code-dob {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 16px;
+  padding-right: 16px;
   width: 230px;
   height: 50px;
   display: flex;
@@ -568,7 +572,7 @@
 }
 .pyp-page .pyp-bg-light {
   background-color: var(--pyp-grey-1);
-  border-radius: 0.5rem;
+  border-radius: 8px;
 }
 .pyp-page .pyp-cut {
   text-decoration: line-through;
@@ -586,34 +590,34 @@
   margin: 0 !important;
 }
 .pyp-page .pyp-my-3 {
-  margin: 1rem auto !important;
+  margin: 16px auto !important;
 }
 .pyp-page .pyp-my-4 {
-  margin: 1.5rem auto !important;
+  margin: 24px auto !important;
 }
 .pyp-page .pyp-mb-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 24px !important;
 }
 .pyp-page .pyp-mb-3 {
-  margin-bottom: 1rem !important;
+  margin-bottom: 16px !important;
 }
 .pyp-page .pyp-mb-2 {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 8px !important;
 }
 .pyp-page .pyp-mb-0 {
   margin-bottom: 0 !important;
 }
 .pyp-page .pyp-mt-4 {
-  margin-top: 1.5rem !important;
+  margin-top: 24px !important;
 }
 .pyp-page .pyp-mt-3 {
-  margin-top: 1rem !important;
+  margin-top: 16px !important;
 }
 .pyp-page .pyp-mt-2 {
-  margin-top: 0.5rem !important;
+  margin-top: 8px !important;
 }
 .pyp-page .pyp-mt-1 {
-  margin-top: 0.25rem !important;
+  margin-top: 4px !important;
 }
 .pyp-page .pyp-mt-0 {
   margin-top: 0 !important;
@@ -623,17 +627,17 @@
 }
 .pyp-page button.pyp-btn {
   background-color: var(--pyp-orange-1);
-  border-radius: 5rem;
+  border-radius: 80px;
   cursor: pointer;
   display: block;
   font-weight: 600;
   font-size: 16px;
   margin: 0 auto;
-  padding: 12px 1rem;
+  padding: 12px 16px;
 }
 @media screen and (max-width: 400px) {
   .pyp-page button.pyp-btn {
-    padding: 1rem;
+    padding: 16px;
     width: 100%;
   }
 }
@@ -673,12 +677,12 @@
 }
 @media screen and (max-width: 767px) {
   .pyp-page.pyp-page-1 .pyp-main {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
   }
 }
 @media screen and (min-width: 768px) {
   .pyp-page.pyp-page-1 .pyp-main {
-    padding-right: 0.5rem;
+    padding-right: 8px;
     width: 65%;
   }
 }
@@ -707,19 +711,19 @@
   background-color: transparent;
   color: black;
   border: none;
-  border-radius: 5rem;
+  border-radius: 80px;
   cursor: pointer;
   display: block;
   font-weight: 600;
   font-size: 16px;
   margin: 0 auto;
   outline: none;
-  padding: 12px 1rem 12px 0;
+  padding: 12px 16px 12px 0 !important;
   text-align: left;
 }
 @media screen and (max-width: 400px) {
   .pyp-page.pyp-page-3 .pyp-cta-flex button.pyp-btn-white {
-    padding: 1rem;
+    padding: 16px;
   }
 }
 .pyp-page.pyp-page-3 .pyp-cta-flex button.pyp-btn-white:active, .pyp-page.pyp-page-3 .pyp-cta-flex button.pyp-btn-white:focus, .pyp-page.pyp-page-3 .pyp-cta-flex button.pyp-btn-white:hover {
@@ -735,25 +739,17 @@
 }
 .pyp-page.pyp-page-4 ul.pyp-review li {
   border-bottom: 1px solid var(--pyp-grey-3);
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-label {
   text-align: left;
-  padding-left: 0.5rem;
+  padding-left: 8px;
   display: inline-block;
-  margin-bottom: 0.5rem;
-}
-@media screen and (min-width: 447px) {
-  .pyp-page.pyp-page-4 .pyp-checkbox-label {
-    line-height: 26px;
-  }
+  margin-bottom: 8px;
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-input {
   margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-input {
   overflow: visible;
@@ -764,9 +760,11 @@
 }
 .pyp-page.pyp-page-4 .pyp-checkbox {
   position: relative;
-  display: block;
-  min-height: 1.5rem;
-  padding-left: 1.5rem;
+  display: flex;
+  min-height: 24px;
+  padding-left: 24px;
+  align-items: center;
+  justify-content: center;
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-input {
   position: absolute;
@@ -775,52 +773,65 @@
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-input:checked ~ .pyp-checkbox-label::before {
   color: #fff;
-  border-color: var(--pyp-orange-1);
-  background-color: var(--pyp-orange-1);
+  border-color: var(--pyp-curacao-1);
+  background-color: var(--pyp-curacao-1);
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-input:focus ~ .pyp-checkbox-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(255, 103, 31, 0.5);
+  border-color: var(--pyp-curacao-1);
+  box-shadow: 0 0 0 3px var(--pyp-curacao-3);
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-input:focus:not(:checked) ~ .pyp-checkbox-label::before {
-  border-color: #999;
+  border-color: var(--pyp-curacao-1);
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-input:not(:disabled):active ~ .pyp-checkbox-label::before {
   color: #fff;
-  background-color: rgba(255, 103, 31, 0.5);
-  border-color: var(--pyp-orange-1);
+  background-color: var(--pyp-curacao-3);
+  border-color: var(--pyp-curacao-1);
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-input:disabled ~ .pyp-checkbox-label::before {
   background-color: #fff;
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-label {
-  position: relative;
+  font-size: 15px;
+  line-height: 1;
   margin-bottom: 0;
+  position: relative;
   vertical-align: top;
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-label::before {
   position: absolute;
-  top: 0.25rem;
-  left: -1.5rem;
+  top: -2px;
+  left: -24px;
   display: block;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   pointer-events: none;
   content: "";
   background-color: #fff;
-  border: var(--pyp-orange-1) solid 1px;
+  border: var(--pyp-grey-3) solid 1px;
+}
+@media screen and (max-width: 767px) {
+  .pyp-page.pyp-page-4 .pyp-checkbox-label::before {
+    top: 1px;
+  }
 }
 .pyp-page.pyp-page-4 .pyp-checkbox-label::after {
   position: absolute;
-  top: 0.25rem;
-  left: -1.5rem;
+  top: -2px;
+  left: -24px;
   display: block;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   content: "";
   background: no-repeat 50%/50% 50%;
 }
+@media screen and (max-width: 767px) {
+  .pyp-page.pyp-page-4 .pyp-checkbox-label::after {
+    top: 1px;
+  }
+}
 .pyp-page.pyp-page-4 .pyp-custom-checkbox .pyp-checkbox-label::before {
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 .pyp-page.pyp-page-4 .pyp-custom-checkbox .pyp-checkbox-input:checked ~ .pyp-checkbox-label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
@@ -854,54 +865,54 @@
 }
 .pyp-page.pyp-page-5 .pyp-products {
   list-style: none;
-  margin: 0 0 1rem;
+  margin: 0 0 16px;
   padding-inline-start: 0;
   text-align: left;
 }
 .pyp-page.pyp-page-5 .pyp-products li {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 .pyp-page.pyp-page-5 .pyp-products li:last-of-type {
   margin-bottom: 0;
 }
 .pyp-page.pyp-page-5 .pyp-products .pyp-product {
   border: 4px solid var(--pyp-blue-1);
-  border-radius: 0.25rem;
+  border-radius: 4px;
   list-style: none;
   padding-inline-start: 0;
-  padding: 1rem;
+  padding: 16px;
 }
 .pyp-page.pyp-page-5 .pyp-products .pyp-product .pyp-product-details {
   display: flex;
 }
 .pyp-page.pyp-page-5 .pyp-products .pyp-product .pyp-product-details .pyp-product-img {
-  border-radius: 0.25rem;
-  height: 4rem;
-  width: 4rem;
+  border-radius: 4px;
+  height: 64px;
+  width: 64px;
 }
 .pyp-page.pyp-page-5 .pyp-products .pyp-product .pyp-product-details .pyp-product-name-sku {
   align-items: center;
   display: flex;
   font-size: 14px;
   justify-content: start;
-  padding-left: 1rem;
+  padding-left: 16px;
   width: 100%;
 }
 .pyp-page.pyp-page-5 .pyp-products .pyp-product .pyp-h3 {
   font-size: 16px;
   line-height: 1;
-  margin: 1rem 0 0.5rem 0;
+  margin: 16px 0 8px 0;
 }
 .pyp-page.pyp-page-5 .pyp-products .pyp-product .pyp-card .pyp-h4 {
   align-items: center;
   display: flex;
   font-size: 14px;
   justify-content: start;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 8px 0;
 }
 .pyp-page.pyp-page-5 .pyp-products .pyp-product .pyp-card .pyp-h4 img {
   height: 24px;
-  margin-left: 0.25rem;
+  margin-left: 4px;
   width: auto;
 }
 .pyp-page.pyp-page-5 .pyp-page-5-img-3-wrap {

@@ -881,14 +881,17 @@
   list-style: none;
   padding-inline-start: 0;
   padding: 16px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .pyp-page.pyp-page-5 .pyp-products .pyp-product .pyp-product-details {
   display: flex;
 }
 .pyp-page.pyp-page-5 .pyp-products .pyp-product .pyp-product-details .pyp-product-img {
   border-radius: 4px;
-  height: 64px;
-  width: 64px;
+  height: 48px;
+  width: 48px;
 }
 .pyp-page.pyp-page-5 .pyp-products .pyp-product .pyp-product-details .pyp-product-name-sku {
   align-items: center;
